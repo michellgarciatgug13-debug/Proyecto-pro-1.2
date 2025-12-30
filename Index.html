@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Juegos Gamer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GamerHub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#upload">Sube tu Juego</a></li>
+                <li><a href="#games">Juega</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro">
+        <h2>Bienvenido a GamerHub</h2>
+        <p>Sube tus juegos y comparte la diversión con otros gamers.</p>
+    </section>
+
+    <section id="upload" class="upload">
+        <h2>Sube tu Juego</h2>
+        <form id="uploadForm">
+            <label for="gameFile">Selecciona tu juego:</label>
+            <input type="file" id="gameFile" accept=".html,.zip,.rar" required>
+            <button type="submit">Subir Juego</button>
+        </form>
+    </section>
+
+    <section id="games" class="games">
+        <h2>Juegos Disponibles</h2>
+        <div id="gameList">
+            <!-- Aquí se mostrarán los juegos cargados -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GamerHub - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
